@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <div class="btn-container">
+        <button class="btn modal">How to Play</button>
+        <button class="btn again">Again!</button>
+      </div>
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" min="1" max="20"/>
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <div class="modal-container">
+      <div class="modal-content">
+        <p>You need to input values in the input field provided in the left part of the page and press check to see if your guess is right or not.<br> You'll get a message on the right side describing if your guess is higher or lower than the correct number.<br> The page will turn green and the number will be revealed once you guessed it. You can press 'Again' button to restart the game.<br> Good Luck 🤞</p>
+        <div class="cross"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
